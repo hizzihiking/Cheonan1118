@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f8fb" />
+  <meta name="description" content="천안시 주민복지팀 윤희진의 개인 포트폴리오입니다." />
+  <title>윤희진 | 공공행정 포트폴리오</title>
+  <style>
+    :root{color-scheme:light;--ink:#15243a;--muted:#66748a;--line:#e4eaf1;--bg:#f6f8fb;--card:#fff;--navy:#142a49;--blue:#4369dd;--blue-light:#edf2ff;--mint:#dff5e9;--shadow:0 18px 55px rgba(25,44,76,.06)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;word-break:keep-all}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:#dbe6ff;color:#102446}
+    .wrap{width:min(1120px,calc(100% - 48px));margin:auto}.header{position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(222,231,240,.8);background:rgba(246,248,251,.88);backdrop-filter:blur(18px)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:78px;gap:20px}.logo{font-size:17px;font-weight:850;letter-spacing:-.055em}.logo span{color:var(--blue)}.navlinks{display:flex;gap:30px;color:#5e6d82;font-size:13px;font-weight:650}.navlinks a{transition:color .2s}.navlinks a:hover,.navlinks a:focus-visible{color:var(--blue)}.nav-cta{border:1px solid #dbe2ee;border-radius:100px;padding:8px 17px;background:white;font-size:12px;font-weight:750;transition:transform .2s,border-color .2s}.nav-cta:hover{transform:translateY(-2px);border-color:#9eb2e9}
+    main{overflow:hidden}.hero{position:relative;display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:40px;padding:94px 0 100px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #dce6f5;background:white;color:#3d5d92;border-radius:100px;padding:8px 14px;font-size:12px;font-weight:750;letter-spacing:.01em}.dot{width:7px;height:7px;border-radius:50%;background:#4ab898;box-shadow:0 0 0 4px #e2f7ef}.hero h1{font-size:clamp(40px,5.3vw,72px);line-height:1.22;letter-spacing:-.075em;margin:25px 0 20px;font-weight:850}.hero h1 em{font-style:normal;color:var(--blue)}.hero-copy{font-size:16px;max-width:550px;color:var(--muted);margin:0 0 32px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 23px;border-radius:12px;font-size:13px;font-weight:750;transition:transform .18s,box-shadow .18s,background .18s;cursor:pointer}.btn:hover{transform:translateY(-3px)}.btn:active,.project-link:active{transform:scale(.97)}.btn.primary{background:var(--navy);color:white;box-shadow:0 8px 24px rgba(20,42,73,.15)}.btn.primary:hover{background:#25476e}.btn.secondary{background:#fff;border:1px solid #dfe6ef;color:var(--navy)}.btn.secondary:hover{box-shadow:var(--shadow)}
+    .profile-card{position:relative;background:linear-gradient(148deg,#203b61 0%,#142a49 68%,#11243d 100%);min-height:346px;border-radius:26px;color:white;padding:32px;box-shadow:0 28px 58px rgba(25,52,93,.17);overflow:hidden}.profile-card::before{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-93px;top:-99px;box-shadow:0 0 0 44px rgba(255,255,255,.025),0 0 0 88px rgba(255,255,255,.02)}.profile-card::after{content:"";position:absolute;width:150px;height:150px;background:#4c77e2;filter:blur(90px);bottom:-100px;right:0;opacity:.7}.profile-top{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:start}.profile-tag{font-size:10px;letter-spacing:.14em;font-weight:800;color:#aabddd}.badge-icon{display:grid;place-items:center;width:46px;height:46px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:14px;font-size:21px}.avatar{display:grid;place-items:center;margin:34px 0 23px;width:76px;height:76px;border-radius:23px;background:linear-gradient(135deg,#d9e7ff,#9eb7f4);color:#193860;font-size:29px;font-weight:850;letter-spacing:-.05em}.profile-name{position:relative;z-index:1;font-size:27px;font-weight:850;letter-spacing:-.05em}.profile-role{color:#afc2df;font-size:13px;margin:4px 0 25px}.profile-bottom{border-top:1px solid rgba(255,255,255,.16);padding-top:18px;display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#d4def0}.profile-bottom strong{font-weight:750;color:#fff}
+    .section{padding:0 0 100px}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:26px}.kicker{font-size:11px;font-weight:800;letter-spacing:.19em;color:var(--blue);text-transform:uppercase}.section h2{font-size:clamp(26px,3vw,37px);letter-spacing:-.06em;line-height:1.3;margin:8px 0 0}.section-desc{font-size:13px;color:var(--muted);max-width:380px;margin:0}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow)}.panel h3{margin:0 0 15px;font-size:20px;letter-spacing:-.04em}.panel p{color:var(--muted);font-size:14px;margin:0;line-height:1.95}.info-list{display:grid;gap:17px}.info-item{display:grid;grid-template-columns:90px 1fr;align-items:center;gap:10px;font-size:14px}.info-item .label{color:#8793a3;font-weight:600;font-size:12px}.info-item .value{font-weight:750}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}.chip{padding:7px 12px;border-radius:9px;color:#385987;background:#eff4fc;font-size:11px;font-weight:700}
+    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.work-card{background:#fff;border:1px solid var(--line);padding:27px;border-radius:19px;transition:transform .2s,box-shadow .2s}.work-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.work-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:#edf2ff;font-size:22px;margin-bottom:26px}.work-card h3{font-size:17px;letter-spacing:-.045em;margin:0 0 10px}.work-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.9}.mini-num{float:right;font-size:12px;color:#afbbcd;font-weight:800}
+    .career{display:flex;align-items:flex-start;gap:20px}.career-line{position:relative;flex:none;margin-top:7px;width:14px;height:14px;border:3px solid #5378df;border-radius:50%;background:#fff;box-shadow:0 0 0 5px #edf2ff}.career h3{font-size:17px;margin:0 0 7px}.career p{font-size:13px;color:var(--muted);margin:0}.career-status{display:inline-block;margin-top:12px;padding:5px 10px;border-radius:6px;background:#eaf7f0;color:#257557;font-size:11px;font-weight:750}
+    .projects{background:#edf2f8;padding:88px 0 95px}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project-card{background:white;border:1px solid #e0e7f0;padding:28px;border-radius:20px;min-height:255px;display:flex;flex-direction:column;box-shadow:0 10px 36px rgba(24,46,78,.035);transition:transform .2s,box-shadow .2s}.project-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(24,46,78,.09)}.project-number{font-size:38px;font-weight:850;letter-spacing:-.08em;color:#d4dff6;line-height:1}.project-card h3{margin:27px 0 9px;letter-spacing:-.04em;font-size:19px}.project-card p{color:var(--muted);font-size:12px;line-height:1.8;margin:0 0 22px}.project-link{display:inline-flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;color:#315cc9;font-size:12px;font-weight:800;padding-top:14px;border-top:1px solid #edf0f5;transition:color .2s,transform .15s}.project-card:hover .project-link{color:#173c9b}.arrow{font-size:18px;line-height:1}
+    .footer{padding:34px 0 43px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;font-size:12px;color:#8895a7}.footer strong{color:#364b67}.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.reveal.visible{opacity:1;transform:translateY(0)}:focus-visible{outline:3px solid #8da7fc;outline-offset:4px}
+    @media(max-width:820px){.hero{grid-template-columns:1fr;padding:65px 0 75px}.profile-card{max-width:500px;min-height:315px;width:100%}.about-grid{grid-template-columns:1fr}.work-grid,.project-grid{grid-template-columns:1fr 1fr}.navlinks{gap:15px}}
+    @media(max-width:560px){.wrap{width:min(100% - 32px,1120px)}.nav{min-height:66px}.navlinks{display:none}.hero{gap:33px;padding:55px 0 75px}.hero h1{font-size:43px}.hero-copy{font-size:14px}.profile-card{padding:26px;min-height:315px}.section{padding-bottom:75px}.section-heading{display:block}.section-desc{margin-top:12px}.panel{padding:24px}.work-grid,.project-grid{grid-template-columns:1fr}.work-card{padding:25px}.work-icon{margin-bottom:18px}.projects{padding:70px 0}.project-card{min-height:220px}.footer-inner{flex-direction:column;align-items:flex-start}.hero-actions .btn{flex:1}.info-item{grid-template-columns:70px 1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="wrap nav" aria-label="주요 메뉴">
+      <a class="logo" href="#home" aria-label="홈으로">Y<span>.</span> PORTFOLIO</a>
+      <div class="navlinks"><a href="#about">소개</a><a href="#work">담당 업무</a><a href="#career">경력</a><a href="#projects">프로젝트</a></div>
+      <a class="nav-cta" href="#projects">작업 모아보기 ↗</a>
+    </nav>
+  </header>
+  <main id="home">
+    <div class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="reveal">
+          <div class="eyebrow"><span class="dot" aria-hidden="true"></span> CHEONAN CITY · PUBLIC SERVICE</div>
+          <h1 id="hero-title">사람을 생각하는<br><em>행정의 가치</em>를<br>만듭니다.</h1>
+          <p class="hero-copy">안녕하세요. 천안시 주민복지팀에서 근무하는 행정8급 <strong>윤희진</strong>입니다. 시민의 일상에 도움이 되는 행정을 지향하며, 배우고 개선하는 자세로 업무에 임합니다.</p>
+          <div class="hero-actions"><a class="btn primary" href="#about">저를 소개합니다 <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#projects">포트폴리오 보기 <span aria-hidden="true">→</span></a></div>
+        </div>
+        <aside class="profile-card reveal" aria-label="프로필 요약">
+          <div class="profile-top"><span class="profile-tag">PROFILE / 2026</span><div class="badge-icon" aria-hidden="true">✦</div></div>
+          <div class="avatar" aria-hidden="true">윤</div>
+          <div class="profile-name">윤희진</div>
+          <p class="profile-role">천안시 · 주민복지팀</p>
+          <div class="profile-bottom"><span>POSITION <strong>행정8급</strong></span><span>FOCUS <strong>주민복지</strong></span></div>
+        </aside>
+      </section>
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal"><div><div class="kicker">01 / ABOUT ME</div><h2 id="about-title">일하는 사람, 윤희진</h2></div><p class="section-desc">작은 업무 하나에도 시민의 관점을 담고자 합니다.</p></div>
+        <div class="about-grid">
+          <div class="panel reveal"><h3>안녕하세요 👋</h3><p>천안시 소속 공무원으로 주민복지팀에서 일하고 있습니다. 정확하고 책임감 있는 행정 처리, 이해하기 쉬운 소통, 더 나은 업무 방식을 중요하게 생각합니다. 이 공간은 저의 업무 경험과 학습 결과물을 차곡차곡 기록하는 포트폴리오입니다.</p><div class="chips"><span class="chip">#책임감</span><span class="chip">#시민중심</span><span class="chip">#업무개선</span><span class="chip">#꾸준한성장</span></div></div>
+          <div class="panel reveal"><h3>기본 정보</h3><div class="info-list"><div class="info-item"><span class="label">이름</span><span class="value">윤희진</span></div><div class="info-item"><span class="label">소속</span><span class="value">천안시</span></div><div class="info-item"><span class="label">부서</span><span class="value">주민복지팀</span></div><div class="info-item"><span class="label">직급</span><span class="value">행정8급</span></div><div class="info-item"><span class="label">관심 분야</span><span class="value">주민복지 · 행정 효율화</span></div></div></div>
+        </div>
+      </section>
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal"><div><div class="kicker">02 / WHAT I DO</div><h2 id="work-title">업무와 관심 분야</h2></div><p class="section-desc">아래 항목은 주민복지팀 업무 성격을 바탕으로 구성한 소개이며, 실제 담당 사무에 맞춰 수정할 수 있습니다.</p></div>
+        <div class="work-grid"><article class="work-card reveal"><span class="mini-num">01</span><div class="work-icon" aria-hidden="true">🤝</div><h3>주민 중심의 복지 행정</h3><p>주민의 입장에서 필요한 정보를 살피고, 복지 관련 행정 업무가 원활하게 이루어지도록 지원합니다.</p></article><article class="work-card reveal"><span class="mini-num">02</span><div class="work-icon" aria-hidden="true">📋</div><h3>꼼꼼한 문서와 업무 관리</h3><p>자료를 체계적으로 정리하고, 정확한 기록과 원활한 업무 협업을 중요하게 생각합니다.</p></article><article class="work-card reveal"><span class="mini-num">03</span><div class="work-icon" aria-hidden="true">💡</div><h3>디지털 도구 활용</h3><p>문서 작성, 시각화, 간단한 웹 도구 등 새로운 방법을 익혀 업무 개선에 활용하는 데 관심이 있습니다.</p></article></div>
+      </section>
+      <section class="section" id="career" aria-labelledby="career-title">
+        <div class="section-heading reveal"><div><div class="kicker">03 / EXPERIENCE</div><h2 id="career-title">주요 경력</h2></div><p class="section-desc">확인된 현재 재직 정보부터 기록합니다.</p></div>
+        <div class="panel reveal"><div class="career"><div class="career-line" aria-hidden="true"></div><div><h3>천안시 · 주민복지팀</h3><p>행정8급 | 주민복지 관련 행정 업무</p><span class="career-status">현재 근무</span></div></div></div>
+      </section>
+    </div>
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="wrap"><div class="section-heading reveal"><div><div class="kicker">04 / PORTFOLIO</div><h2 id="projects-title">나의 작업 아카이브</h2></div><p class="section-desc">아래 1, 2, 3 버튼을 누르면 각 HTML 페이지로 이동합니다. 파일은 추후 추가할 수 있습니다.</p></div>
+      <div class="project-grid">
+        <article class="project-card reveal"><div class="project-number">01</div><h3>기획문서 MD</h3><p>기획 아이디어와 업무 계획을 Markdown 기반 문서로 정리한 공간입니다.</p><a class="project-link" href="1.html" aria-label="1번 기획문서 MD 페이지로 이동"><span>1 · 기획문서 보기</span><span class="arrow" aria-hidden="true">↗</span></a></article>
+        <article class="project-card reveal"><div class="project-number">02</div><h3>바이브코딩 결과물</h3><p>아이디어를 직접 구현한 웹 도구와 실습 결과물을 공유하는 공간입니다.</p><a class="project-link" href="2.html" aria-label="2번 바이브코딩 결과물 페이지로 이동"><span>2 · 결과물 보기</span><span class="arrow" aria-hidden="true">↗</span></a></article>
+        <article class="project-card reveal"><div class="project-number">03</div><h3>슬라이드</h3><p>발표용 자료와 시각적으로 전달하는 콘텐츠를 모아두는 공간입니다.</p><a class="project-link" href="3.html" aria-label="3번 슬라이드 페이지로 이동"><span>3 · 슬라이드 보기</span><span class="arrow" aria-hidden="true">↗</span></a></article>
+      </div></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span><strong>Y. PORTFOLIO</strong> · 천안시 주민복지팀 윤희진</span><span>© <span id="year">2026</span> 윤희진. 개인 포트폴리오 · 천안시 공식 홈페이지가 아닙니다.</span></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    } else { document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible')); }
+  </script>
+</body>
+</html>
