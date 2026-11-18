@@ -5,3 +5,5 @@
 여기에 오늘 작성한 문서와 코드 업로드
 
 https://hizzihiking.github.io/Cheonan1118/
+
+https://canva.link/jta59rikuwuoneo
